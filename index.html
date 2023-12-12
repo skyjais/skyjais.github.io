@@ -1,11 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio: Akash Jaiswal</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
-<body>
-    <h2>HElooo</h2>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header >
+    <div class="container" id="nav-menu">
+
+      <h1 class="h1 logo">
+        <a href="#"><span>Akash</span> Jaiswal</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="nav-link home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="nav-link about">About</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="nav-link skills">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link contact">Contact</a>
+          </li>
+
+          <li>
+            <a onclick="downloadResume()" href="./assets/resume/Akash-Jaiswal-Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="/assets/images/heroimage.png" media="(min-width: 768px)">
+            <source srcset="/assets/images/heroimage.png" media="(min-width: 500px)">
+            <img src="/assets/images/heroimage.png" alt="my Main Iamge"
+              class="w-100 home-img hero-img">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title" id="user-detail-name">Hi, My name is Akash</h2>
+          <h3 class="h3 hero-title">Full Stack Web Developer</h3>
+
+          <!-- <a href="#contact" class="btn btn-primary">Get in touch</a> -->
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip skills-card-name">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip skills-card-name">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip skills-card-name">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <!-- <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 project-title">
+                0 <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 project-title">
+                5+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 project-title">
+                0 <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about section aboutsection" id="about">
+
+        <figure class="about-banner">
+          <img src="/assets/images/heroimage.png" alt="A man in a white shirt with a thinking expression"
+            class="whiteShirtimage">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 project-section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text" id="user-detail-intro">
+            An adept Full Stack Developer with hands-on experience in the MERN stack, capable of designing and delivering complex web applications. Experienced in web development including HTML,Css,JavaScript,React,Redux with a focus on creating responsive and user-friendly web interfaces. Skilled in building scalable and robust web applications. Possessing exceptional problem-solving skills, an ideal fit for a challenging position.
+          </p>
+
+          <div class="btn-group">
+            <a href="#contact"><button class="btn btn-secondary">Hire me</button></a>
+            <a onclick="downloadResume()" href="/assets/resume/Akash-Jaiswal-Resume.pdf" class="btn btn-primary"
+              id="resume-button-2" download>Download resume</a>
+            <!-- <button class="btn btn-primary" id="resume-button-2" onclick="downloadResume()">Download CV</button> -->
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skillssection" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 project-section-title">What My Programming Skills Include?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="TypeScript logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Redux</div>
+                
+                <div class="card-icon">
+                  <img src="./assets/images/redux.png" alt="React logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Chaka UI</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/chakraUI.png" width="50px" alt="Bootstrap logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Vue logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Nodejs</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/nodejs.png" alt="Firebase logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">MongoDB</div>
+                <div class="card-icon">
+                  <img src="/assets/images/mongodb.png" alt="Firebase logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Express</div>
+                <div class="card-icon">
+                  <img src="/assets/images/express.png" alt="Firebase logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Command Line</div>
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">VS Code</div>
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <!-- <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">ClickUp</div>
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo" class="skills-card-img">
+                </div>
+              </div>
+            </li> -->
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">Slack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skills-card">
+                <div class="tooltip skills-card-name">netlify</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/netlify.png" alt="Photoshop logo" class="skills-card-img">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="projects">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 project-section-title">Checkout my Projects!</h2>
+
+              <p class="section-text">
+                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+<!-- Project 1 -->
+
+          <li>
+            <div class="project-card">
+                <img src="/assets/images/projectss/sarthitravell.png" class="w-1001"  alt="">
+
+                <div class="card-content">
+                  <div class="project-name">
+                    <h3 class="h4 project-title">Sarthi Travell</h3>
+                  </div>
+                  <div class ="project-links">
+                  <a href="https://github.com/MouS0926/SARTHI-TRAVEL-Tourist-Package-Booking-Website" target=”_blank”><img src="./assets/images/github-link-icon.png" class="project-github-link"/>
+                  </a>
+                  <a href="https://sarthitravel.netlify.app/" target="_blank">
+                    <img src="./assets/images/deployed-link-icon.png" class="project-deployed-link"/>
+                  </a>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>SARTHI TRAVEL is a website for a travel agency. The website contains details about tourist destinations, tour packages. This website allow people to book their dream destination with in their budgets.
+                  <br>
+                  <!-- CharityHero offers the following features:  
+                <br>Make Charity<br>Donate -->
+              </p>
+                </div>
+            </div>
+          </li>
+
+<!-- Project 2 -->
+
+
+          <!-- <li>
+            <div class="project-card">
+              <img src="./assets/images/projectss/Specxy.png" class="w-1001" alt="">
+          
+              <div class="card-content">
+                <div class="project-name">
+                  <h3 class="h4 project-title">Specxy.co</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/GaneshYadav3142/rotten-snakes-6255" target=”_blank”><img
+                      src="/assets/images/github-link-icon.png" class="project-github-link"/>
+                  </a>
+                  <a href="https://glittering-cucurucho-a9b3ca.netlify.app/" target="_blank">
+                    <img src="./assets/images/deployed-link-icon.png" class="project-deployed-link"/>
+                  </a>
+                </div>
+              </div>
+              <div class="project-description">
+                <p>The LensKart Clone is a cutting-edge e-commerce website designed to cater to the diverse needs of eyecare and eyewear enthusiasts. This platform replicates the features of the popular LensKart website, offering customers an unparallel shopping for all</p>
+              </div>
+            </div>
+          </li> -->
+
+<!-- Project 3 -->
+
+          <li>
+            <div class="project-card">
+              <img src="./assets/images/projectss/fastfashion.png" class="w-1001" alt="">
+          
+              <div class="card-content">
+                <div class="project-name">
+                  <h3 class="h4 project-title">Fast Fashion</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Mohammmedrafique/Modern-Clothing-E-Commerce-Web-Application" target=”_blank”><img src="./assets/images/github-link-icon.png" class="project-github-link"/>
+                  </a>
+                  <a href="https://truculent-face-1803-nine.vercel.app/" target="_blank">
+                    <img src="./assets/images/deployed-link-icon.png" class="project-deployed-link"/>
+                  </a>
+                </div>
+              </div>
+              <div class="project-description">
+                <p>This e-commerce platform, named "Fast-Fashion," capitalizes on modern web technologies to offer a visually stunning and user-friendly interface. It's built on React for the frontend, backed by a RESTful API for data interaction, and utilizes HTML, JavaScript, CSS, and Tailwind CSS for style and functionality.</p>
+              </div>
+            </div>
+          </li>
+
+<!-- Project 4 -->
+
+          <li>
+            <div class="project-card">
+              <img src="./assets/images/projectss/Traveller.png" class="w-1001" alt="">
+          
+              <div class="card-content">
+                <div class="project-name">
+                  <h3 class="h4 project-title">Traveller</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/skyjais/Traveller" target=”_blank”><img src="./assets/images/github-link-icon.png" class="project-github-link"/>
+                  </a>
+                  <a href="https://648ff05711e1f629dd64fb2c--visionary-centaur-d4c88a.netlify.app/" target="_blank">
+                    <img src="./assets/images/deployed-link-icon.png" class="project-deployed-link"/>
+                  </a>
+                </div>
+              </div>
+              <div class="project-description">
+                <p>Travel.com is a hotel booking website where user can book different
+                  holiday packages and flights and cars bookings across the different
+                  paart of the world.</p>
+              </div>
+            </div>
+          </li>
+
+<!-- Project 5 -->
+
+          <li>
+            <div class="project-card">
+              <img src="/assets/images/projectss/workinprogress.jpg" class="w-1001" alt="">
+          
+              <div class="card-content">
+                <div class="project-name">
+                  <h3 class="h4 project-title">New Project Coming soon...</h3>
+                </div>
+                <div class="project-links">
+                  <a><img
+                      src="./assets/images/github-link-icon.png" class="project-github-link"/>
+                  </a>
+                  <a>
+                    <img src="./assets/images/deployed-link-icon.png" class="project-deployed-link"/>
+                  </a>
+                </div>
+              </div>
+              <div class="project-description">
+                <p>Thank you for your Patience...</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- GITHUB STATS -->
+
+
+
+
+<!-- ------------------------------------------- -->
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contactSection contact section" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 project-section-title">Have a new Project Idea? Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how I can help. Fill out the form and I will be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Gorakhpur, Uttar Pradesh, India
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info" id="contact-phone">(+91) 7991466867</a>
+
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:akashjais1705@gmail.com" class="contact-info" id="contact-email">akashjais1705@gmail.com@gmail.com</a>
+              </div>
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/akash-jaiswal-0624b1278/" target="_blank" class="contact-social-link" id="contact-linkedin">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/skyjais" target="_blank" class="contact-social-link" id="contact-github">
+                    <div class="tooltip">Github</div>
+
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- https://formsubmit.co/akashjais1705@gmail.com -->
+        <form action="https://formsubmit.co/259a9550bb093e384218e59fd72401a5" class="contact-form" method="POST">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+         Akash Jaiswal<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 Credits <a href="#">Coding Stella</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/assets/JS/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
