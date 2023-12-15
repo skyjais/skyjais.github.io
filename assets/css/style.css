@@ -461,7 +461,7 @@ body.active {
   left: 0;
   height: 5px;
   width: 0;
-  background: var(--raw-seinna);
+ 
   transition: var(--transition-1);
 }
 
