@@ -1,5 +1,5 @@
 function copyToClipboard() {
-  var textToCopy = "chetanchauhan795@gmail.com";
+  var textToCopy = "akajais001@gmail.com";
 
   var tempInput = document.createElement("input");
   tempInput.value = textToCopy;

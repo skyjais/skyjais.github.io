@@ -106,7 +106,7 @@ if (localStorage.getItem("theme") === "light_theme") {
 //Function to automatically download file to system
 function downloadResume() {
   window.open(
-    "https://drive.google.com/file/d/16cOmAfANpUVbGXj7l8wP6h7LW0slRUN5/view?usp=sharing",
+    "https://drive.google.com/file/d/1WgfLnPuAzL_gYmQt3b2ngVDQOC_u47VE/view?usp=sharing",
     "_blank"
   );
 }
